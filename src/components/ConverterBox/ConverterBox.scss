@@ -1,0 +1,27 @@
+.converter-box {
+  padding: 2rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.6rem;
+
+  &__currencyBoxes {
+    display: flex;
+    margin: 1rem;
+  }
+  &__historicalToggle {
+    margin-left: 0.5rem;
+  }
+  &__historical {
+    display: flex;
+    flex-direction: column;
+  }
+  &__result {
+    white-space: pre-line;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,20 @@
+.currencyBox {
+  display: flex;
+  flex-direction: column;
+  &-select {
+    width: 75px; //using px because of ant-design
+    margin: 1rem;
+  }
+  &__select-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-select {
+    //tweaking internal ant-design styling - only in currencyBox
+    margin: 1rem;
+  }
+  .ant-input-number {
+    width: 100%;
+  }
+}
