@@ -54,6 +54,8 @@ const ConverterBox = () => {
     "converter-historical-state",
     {
       isShown: false,
+      dateStart: moment().format("YYYY-MM-DD"),
+      dateEnd: moment().format("YYYY-MM-DD"),
     } as HistoricalFormData
   );
   const toggleShowHistorical = () =>
