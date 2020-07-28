@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A setup to bootstrap my react apps fast",
   "author": "Szymon Wiszczuk",
+  "homepage": "https://golota60.github.io/currency-converter",
   "license": "MIT",
   "dependencies": {
     "antd": "^4.5.0",
@@ -16,7 +17,8 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "test:clear": "jest --clearCache",
-    "purge": "rm -rf node_modules && rm -rf .cache && rm -rf dist"
+    "purge": "rm -rf node_modules && rm -rf .cache && rm -rf dist",
+    "deploy": "yarn && yarn build && gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -28,6 +30,7 @@
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "babel-plugin-import": "^1.13.0",
+    "gh-pages": "^3.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
     "parcel-bundler": "^1.12.4",
