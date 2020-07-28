@@ -1,7 +1,7 @@
 import React from "react";
 import "./HistoricalBox.scss";
 import { Divider, Button, DatePicker } from "antd";
-import moment, { Moment } from "moment";
+import moment from "moment";
 const { RangePicker } = DatePicker;
 
 interface HistoricalBoxProps {
@@ -22,8 +22,11 @@ const HistoricalBox = ({
       <Divider>Historical Data</Divider>
       <RangePicker
         onChange={onDateChange}
-        disabledDate={(current) => {
-          return current && current > moment();
+        disabledDate={(current: any) => {
+          return (
+            current &&
+            current.format("YYYY-MM-DD") > moment().format("YYYY-MM-DD")
+          );
         }}
         defaultValue={defaultValue}
       />

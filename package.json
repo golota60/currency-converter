@@ -18,7 +18,7 @@
     "test:watch": "yarn test --watch",
     "test:clear": "jest --clearCache",
     "purge": "rm -rf node_modules && rm -rf .cache && rm -rf dist",
-    "deploy": "yarn && yarn build && gh-pages -d build"
+    "deploy": "yarn && parcel build src/index.html -d build --public-url /currency-converter/ --no-minify && gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",

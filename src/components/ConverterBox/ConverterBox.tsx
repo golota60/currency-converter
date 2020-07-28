@@ -197,8 +197,8 @@ const ConverterBox = () => {
             <HistoricalBox
               onDateChange={onDateRangeChange}
               defaultValue={[
-                moment(historical.dateStart),
-                moment(historical.dateEnd),
+                moment(historical.dateStart, "YYYY-MM-DD"),
+                moment(historical.dateEnd, "YYYY-MM-DD"),
               ]}
               onSubmit={handleHistoricalDataClick}
             />
