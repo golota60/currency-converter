@@ -1,6 +1,6 @@
 ## Currency Converter
 
-  This app is a simple currency converter using api.exchangeratesapi.io for all needed data
+  This app is a simple currency converter using api.exchangeratesapi.io for all needed data. Demo: https://golota60.github.io/currency-converter/
 
 ## Installation
 
